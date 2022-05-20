@@ -1,0 +1,25 @@
+{
+  "name": "chat_node",
+  "version": "1.0.0",
+  "description": "chat whit nodejs - webSocket - mongodb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "websocket",
+    "mongodb",
+    "chat"
+  ],
+  "author": "Ronaldo Lantigua M.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Chat fullstack</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="bi bi-list"></i>
+            </label>
+            <a href="/"  rel="noopener noreferrer">Chat javascript</a>
+            <ul>
+                <li><a class="bi bi-brightness-low-fill" href=""></a></li>  
+                <li><a class="bi bi-github" href=""></a></li>
+            </ul>    
+        </nav>
+    </header>
+   <div class="userLogin" id="login">
+       <h3>Ingresa tu nombre de usuario</h3><hr>
+       <p id="nameError"></p>
+       <form id="login-form">
+            <input type="text" 
+                name="login_name"
+                id="username" 
+                class="login-name"
+                placeholder="Ingresa tu nombre de usuario">
+            <button
+                type="submit"
+                class="bi bi-send login-buton" 
+                id="loginButon"> 
+                login
+            </button>  
+       </form>
+   </div>
+
+   <div class="users">
+        <h3>users connect</h3>
+        <div id="usersNames">
+        
+        </div>
+    </div>
+    <div class="chat-container">
+        <h1 class="chat-title">Chat</h1>
+        <div id="chat"></div>
+        <form class="chat-footer">
+            <input 
+                type="text" 
+                name="chat" 
+                id="messege" 
+                placeholder="Escribe tu mensaje aqui">
+            <button 
+                type="submit">
+                <i class="bi bi-send"></i>
+            </button>
+        </form>
+    </div>
+
+  
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js" charset="UTF-8"></script>
+</body>
+</html>
